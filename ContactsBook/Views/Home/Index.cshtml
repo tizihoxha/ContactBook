@@ -1,0 +1,100 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>My ASP.NET App</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.2/css/bootstrap.min.css">
+	<style>
+		body {
+			background-color: #F8F9FA;
+		}
+
+		header {
+			background-color: #343A40;
+			color: #FFFFFF;
+		}
+
+		h1 {
+			font-size: 3rem;
+			font-weight: bold;
+			text-align: center;
+			margin-top: 2rem;
+			margin-bottom: 2rem;
+		}
+
+		main {
+			background-color: #FFFFFF;
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px rgba(135, 206, 235, 0.3);
+			padding: 2rem;
+			margin-bottom: 2rem;
+		}
+
+		ul {
+			list-style: disc; /* Use disc to display a solid bullet point, circle for a hollow bullet point, or square for a square bullet point */
+			padding-left: 1em; /* Add some left padding to the list to make room for the bullet points */
+		}
+
+		li {
+			
+			margin-right: 0.5rem;
+
+		}
+
+		a {
+			color: #043353;
+			text-decoration: none;
+		}
+
+			a:hover {
+				content: "✓";
+				color: #0056B3;
+				text-decoration: underline;
+			}
+
+		ul.no-bullets {
+			list-style-type: none;
+		}
+
+	</style>
+</head>
+<body>
+	<header class="container py-3">
+		<h1>ContactBook App</h1>
+	</header>
+
+	<main class="container my-5">
+		<p><h2 style=" margin-bottom: 1rem;">Welcome to my ContactBook App.</h2></p>
+
+		<h5 style =" margin-bottom: 3rem;">ContactBook App is primarily meant for keeping the records of contacts.</h5>
+
+		<h6 style=" margin-bottom: 1rem;">It has the following functionalities:</h6>
+
+		<ul style =" margin-bottom: 2rem;">
+			<li> Register </li>
+			<li>Login/Logout</li>
+			<li>Creates a new contact</li>
+			<li>Edits the contact</li>
+			<li>Deletes the contact</li>
+			<li>Search functionalty</li>
+			<li>Role assigment: Admin/User</li>
+			<li>Saves Search result to Csv & Excel File</li>
+		</ul>
+
+		<h6 style =" margin-bottom: 1rem;">Access ContactBook:</h6>
+
+		<ul style=" margin-bottom: 1rem;" class="no-bullets">
+			<li><a href="https://localhost:7175/Access/First">Roles</a></li>
+			<li><a href="https://localhost:7175/Contacts">Contacts</a></li>
+			<li><a href="https://localhost:7175/Contacts/Add">Add Contact</a></li>
+			<li><a href="https://localhost:7175/Contacts/View/">Edit Contact</a></li>
+		</ul>
+	</main>
+</body>
+</html>
+
